@@ -10,7 +10,6 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        
         <meta name="twitter:title" content="Clinique de Cardiologie Lanaudiere"/>
         <meta name="twitter:description" content="Ouverture printemps 2025"/>
         <meta property="twitter:image" content="https://www.cardiolanaudiere.ca/android-chrome-512x512.png"/>
@@ -23,7 +22,6 @@
         <meta property="og:image" content="https://www.cardiolanaudiere.ca/android-chrome-512x512.png"/>
         <meta property="og:image:width" content="512"/>
         <meta property="og:image:height" content="512"/>
-        
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -71,7 +69,10 @@
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
                                 <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Saisir votre courriel..." aria-label="Saisir votre courriel..." /></div>
-                                <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit" onclick="onSubmitForm()">M'ajouter à la liste!</button></div>
+                                <div class="col-auto">
+                                    <button class="btn btn-primary d-block d-sm-none" type="submit" onclick="onSubmitForm()">M'ajouter!</button>
+                                    <button class="btn btn-primary d-none d-sm-block" type="submit" onclick="onSubmitForm()">M'ajouter à la liste!</button>
+                                </div>
                             </div>
                             <div class="invalid-feedback mt-2">Un courriel est requis.</div>
                             <div class="invalid-feedback mt-2">Le courriel n'est pas valide.</div>
@@ -105,7 +106,7 @@
                                 <h4 class="text-uppercase m-0">Adresse</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black-50">
-                                    324 boul. Antonio-Barrette
+                                    324 boul. Antonio-Barrette, Suite 102
                                     <br>
                                     Notre-Dame-des-Prairies
                                 </div>
@@ -133,9 +134,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://www.facebook.com/profile.php?id=61570464280257"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://www.instagram.com/cardiolanaudiere/"><i class="fab fa-instagram"></i></a>
+                <div class="pt-5 text-center">
+                    <h2 class="pt-3 text-white mx-auto">
+                        Suivez-nous sur les médias sociaux
+                    </h2>
+                    <div class="pt-5 social d-flex justify-content-center">
+                        <a class="mx-2" href="https://www.facebook.com/profile.php?id=61570464280257"><i class="fab fa-facebook-f"></i></a>
+                        <a class="mx-2" href="https://www.instagram.com/cardiolanaudiere/"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
         </section>

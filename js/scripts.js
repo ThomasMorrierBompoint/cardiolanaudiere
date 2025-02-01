@@ -54,27 +54,5 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 var onSubmitForm = function () {
-    var removeClassFromElem = function(selector, className) {
-        try {
-            document.body.querySelector(selector).classList.remove(className)
-        } catch (e) {
-
-        }
-    }
-
-    const emailInput = document.body.querySelector('#emailAddress')
-    if (emailInput.value && emailInput.value.includes('@')) {
-        console.log('Sending email', emailInput.value)
-        axios.post(
-            'https://xenblocks.app/cardiolanaudiere/email',
-            { email: emailInput.value },
-            { headers: { 'Content-Type': 'Application/Json' }}
-        )
-            .then(function (response) {
-                removeClassFromElem('#submitSuccessMessage', 'd-none')
-            })
-            .catch(function (error) {
-                removeClassFromElem('#submitErrorMessage', 'd-none')
-            });
-    }
+    window.open('https://clinique-de-cardiologie-lanaudiere.odoo.com/survey/start/8612027c-785b-44da-a8e1-ad2578fc0a78', '_blank')
 }
